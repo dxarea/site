@@ -5,7 +5,7 @@ permalink: /about/
 image: '/images/about.jpg'
 ---
 
-¿Quién hay detrás bastidores? David y Susana Pérez, hermanos dedicados al mundo de la tecnología. Mundos distintos, Madrid y Londres, programación y gestión de proyectos. LLevamos veinte años colaborando con empresas de diferentes ámbitos, bancario, transporte, cultura, estatal, comunicaciones, etc. en el que hemos adquirido el conocimiento que ahora ponemos a tu disposición.   
+¿Quién hay detrás de bastidores? David y Susana Pérez, hermanos dedicados al mundo de la tecnología. Mundos distintos, Madrid y Londres, programación y gestión de proyectos. LLevamos veinte años colaborando con empresas de diferentes ámbitos, bancario, transporte, cultura, estatal, comunicaciones, etc. en el que hemos adquirido el conocimiento que ahora ponemos a tu disposición.   
 
 ![Un nuevo Camino]({{site.baseurl}}/images/path.jpg)
 *DX Área - un camino nuevo*
