@@ -10,8 +10,8 @@ url: "http://dxarea.com/" # The base hostname & protocol for your site, e.g. htt
 #-------------------------------
 # Author Settings
 author:
-  name: Susana & David
-  avatar: '/images/15.jpg'
+  name: David
+  avatar: '/images/avatarDavid.jpeg'
 
 
 #-------------------------------
@@ -25,8 +25,8 @@ hero:
 #-------------------------------
 # Contact Settings
 contact:
-  email: your@email.com # Add your email for contant form
-  description: The Force is strong with this one. I have you now. I find your lack of faith disturbing. Hey, Luke! May the Force be with you. She must have hidden the plans in the escape pod. Send a detachment down to retrieve them, and see to it personally, Commander. There’ll be no one to stop us this time! # Add a description of your form
+  email: dxarea@gmx.com # Add your email for contant form
+  description: En DX estaremos encantados de colaborar contigo en cualquier proyecto de transformación digital. Podemos hacerlo a diversos niveles, gestión de proyectos, desarrollo, o consultorías puntuales. No dudes en ponerte en contacto con nostros y aclarar cualquier duda que puedas tener.
 
 # NOTE
 # Aditu theme comes with a contact form built-in. You can use this form with Formspree service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
@@ -47,7 +47,8 @@ social:
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
+#disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier: dx-area # Add your shortname for Disqus Comment. For example mr-brown
 
 
 #-------------------------------
@@ -57,7 +58,7 @@ google-analytics: # Add your identifier. For example UA-99631805-1.
 
 #-------------------------------
 # Newsletter
-mailchimp: true # To enable the mailchimp form, use the value true. To turn off use the value false.
+mailchimp: false # To enable the mailchimp form, use the value true. To turn off use the value false.
 mailchimp-identifier: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
 
 
