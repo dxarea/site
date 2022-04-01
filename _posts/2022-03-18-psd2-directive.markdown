@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Payment Services Directive
+title:  Payment Services Directive - What
 date:   2022-03-18 18:05:55 +0300
 image:  '/images/20220318_psd2.jpg'
 tags:   open_banking security payment_methods fintech
 ---
 # Regimen PSD2
 
-PSD2 es un marco regulatorio que trata de dinamizar los cambios que se están produciendo en los servicios de pago. Aunque las iniciativas en este tipo de servicios son constantes, es el negocio de los pagos minoristas en el que más se nota esta corriente gracias a las FinTech.
+Se trata de un marco regulatorio que pretende de dinamizar los cambios que se están produciendo en los servicios de pago. Aunque las iniciativas en este tipo de servicios son constantes, es el negocio de los pagos minoristas en el que más se nota esta corriente gracias a las FinTech.
 
 El acrónimo PSD2 corresponde a Payment Service Directive 2, directiva que define la normativa europea sobre pagos online. Aunque entró en vigor en 2018, y su aplicación estaba prevista para el 14 de septiembre de 2019, la ABE (Autoridad Bancaria Europea) aprobó una moratoria de 12 a 14 meses.
 

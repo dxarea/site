@@ -1,0 +1,27 @@
+#service {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#service .service-item {
+    padding-bottom: 30px;
+}
+
+#service .service-item i {
+    font-size: 60px;
+    /*color: #4A4656;*/
+}
+
+#service .service-item h4 {
+    padding-top: 20px;
+    margin: 0;
+    /*color: #666;*/
+}
+
+#service .service-item p {
+    /*color: #888;*/
+    padding-top: 10px;
+    margin: 15px;
+    font-size: 14px;
+    /*line-height: 1.8;*/
+}

@@ -1,0 +1,31 @@
+- icon: ion-ios-briefcase
+  title: Consultoría
+  content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+
+- icon: ion-ios-cloud-upload-outline
+  title: Web Design
+  content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+
+- icon: ion-card
+  title: App Design
+  content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+
+- icon: ion-ios-cog-outline
+  title: Start Up
+  content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+
+- icon: crm
+  title: Logo Design
+  content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+
+- icon: ion-leaf
+  title: Development
+  content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+#
+#- icon: ion-planet
+#  title: Brand Identity
+#  content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+#
+#- icon: ion-earth
+#  title: Brand Identity
+#  content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut

@@ -1,3 +1,11 @@
+#Jekyll local site
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+
 # Compiled class file
 *.class
 
