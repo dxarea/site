@@ -1,7 +1,15 @@
 [
   
     {
-      "title"    : "Payment Services Directive - What",
+      "title"    : "PSD2 - Who &amp; Whose",
+      "category" : "",
+      "tags"     : "open_banking, security, payment_methods, and fintech",
+      "url"      : "/2022/04/01/psd2-who/",
+      "date"     : "Apr 1, 2022"
+    } ,
+  
+    {
+      "title"    : "Psd2 - What",
       "category" : "",
       "tags"     : "open_banking, security, payment_methods, and fintech",
       "url"      : "/2022/03/18/psd2-directive/",

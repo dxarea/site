@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  Payment Services Directive - What
+title:  Psd2 - What
 date:   2022-03-18 18:05:55 +0300
 image:  '/images/20220318_psd2.jpg'
 tags:   open_banking security payment_methods fintech
 ---
-# Regimen PSD2
+# Payment Service Directive 2
 
 Se trata de un marco regulatorio que pretende de dinamizar los cambios que se están produciendo en los servicios de pago. Aunque las iniciativas en este tipo de servicios son constantes, es el negocio de los pagos minoristas en el que más se nota esta corriente gracias a las FinTech.
 

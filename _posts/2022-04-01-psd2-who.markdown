@@ -1,57 +1,41 @@
 ---
 layout: post
-title:  Payment Services Directive - Who and Whose
-date:   2022-04-01 18:05:55 +0300
+title:  PSD2 - Who & Whose
+date:   2022-04-01 10:02:00 +0300
 image:  '/images/20220401_psd2.jpg'
-tags:   open_banking payment_methods fintech
+tags:   open_banking security payment_methods fintech
 ---
-# Actores
+# Actores PSD2
 
-Una vez descrito el propósito de la directiva europea PSD2, así como sus principales implicaciones, es conveniente comprender con mayor detalle los actores implicados, así como sus posibles interacciones. Puesto que lo habitual es que se les mencione por sus siglas en inglés, se hará referencia a todos ellos de esta forma.
+Una vez descrito el [propósito de la directiva PSD2]({{ site.url }}2022/03/18/psd2-directive/), así como sus principales implicaciones, vamos a explicar en profundidad los actores implicados, y qué ofrecen al resto de actores del ecosistema. Puesto que lo habitual es que se les mencione por sus siglas en inglés, se hará referencia a todos ellos de esta forma.
 
-Atendiendo al tipo de servicio que ofrecen se pueden clasificar en:
+A continuación se van a explicar los principales actores implicados, clasificándolos en dos grupos: 
+* Actores tradicionales. Son los que existían en el comercio electrónico antes de la aparición de la nueva directiva, y pueden verse afectados en mayor o menor medida por esta.
+* Actores nuevos. Surgen a partir de la regulación de servicios que no existían hasta el momento y que se detallan a continuación 
 
-1. PSU (Payment Service User)
-2. ASPSP (Account Servicing Payment Service Providers). Son los Proveedores de Servicios de Pago (PSP) y de los Servicios de Información de Cuentas (AIS). La idea es potenciar el mercado financiero a través de ellos
+## Actores tradicionales 
 
-3. PSP (Payment Service Provider). Pueden ser o no entidades bancarias, pero en general son intermediarios de servicios financieros. Los principales representantes son PayPayl, Visa o Mastercard. PSD2 les supone incluir nuevas formas de verificación de identidad para permitir la autenticación en dos pasos, cumplir con el nuevo protocolo de envío de datos (3DS), y asegurar el cumplimiento del resto de estándares técnicos del RTS [Strong Customer Autentication](https://www.eba.europa.eu/regulation-and-policy/payment-services-and-electronic-money/regulatory-technical-standards-on-strong-customer-authentication-and-secure-communication-under-psd2)
+#### 1. PSU (Payment Service User)
 
-4. Account Information Service Provider (AISP). Sus servicios se basan en recopilar información relativa a las cuentas de sus usuarios, fundamentalmente saldos y movimientos.
-   Es decir, este servicio permite al usuario tener una visión agregada de su liquidez y, por tanto, planificar sus operaciones de pago de una forma más eficiente y/o segura que en la actualida
-   Desde el punto de vista de la comunicación con la ASPSP, existen 4 intercambios esenciales, aunque no exclusivos:
+Es la persona física o jurídica que hace uso de un servicio de pago, en calidad de pagador, beneficiario, o ambos. 
+En el contexto de la ***Directiva de Servicio de Pago*** se utiliza principalmente en el primer sentido, el del usuario que expone la información de sus cuentas, o que utiliza un medio de pago. Es importante prestar atención al hecho de que el ámbito PSD2 no implica que el ***Usuario de los servicios de pago*** utilice un servicio de pago en sentido estricto, como se podrá deducir más adelante.
+La forma en la que les afecta la nueva normativa, es principalmente que van a disfrutar de nuevos servicios financieros, ya sea asociados a la iniciación de pagos, o a la información de sus cuentas. 
 
-* Obtención del listado de cuentas
-* Lectura del detalle de la cuenta (balance)
-* Obtención de transacciones de la cuenta
-* Obtención de los balances de pago
+#### 2. ASPSP (Account Servicing Payment Service Providers) 
 
-5. Payment Initiation Service Provider (PISP). Servicio destinado a la iniciación de pagos entre dos entidades, el prestador del servicio y la entidad de pago.  Adicionalemnte les está permitido almacernar información de los pagos gestionados para que el usuario pueda consultarlos.
-   Este Servicio pertmite que las compras se puedan pagar sin disponer de una tarjeta de crédito, transfiriendo fondos desde una cuenta corriente del usuario ordenante a la del comercio, sin que ambas tengan que pertencer al mismo banco necesariamente.
+Se trata de los ***Proveedores de Servicios de Pago (PSP)***, así como de los proveedores de los ***Servicios de Información de Cuentas (AIS)***. Son la palanca a través de la cual se pretende potenciar el mercado financiero. Y lo son porque cuenta con dos de los 3 elementos implicados, la información de las cuentas de sus clientes (PSU's), y los servicios de pago.
+Son los que más afectados se ven por la nueva normativa, ya que les obliga a implementar dos servicios nuevos para ser usados por terceros:
 
-Al igual que en el caso anterios existe un conjunto de operaciones esenciales:
+###### ***Payment Initiation Service (PIS)***
 
-* Inicio de pago
-* Obtención de información del estado de pago
-* Obtención de información del pago
-* Cancelar inicio de pago
+Se trata de una nueva forma de pago, directamente desde la cuenta bancaria, sin necesidad de contar con un medio de pago adicional. Se espera que este tipo de servicio proporcione, proporcione algunas ventajas:
+* Al tratarse de un proceso simplificado, que la experiencia del usuario mejore, ya que no tiene que introducir datos adicionales de un medio de pago.
+* Incremento de la seguridad para el comercio. Se paga por transferencia, y el iniciador asegura al comercio que recibirá el pago.
+* Simplificación de los trámites, al no ser necesarios contratos previos con el banco para llevar a cabo la transacción.
 
-## Servicios
+###### ***Account Information Service (AIS)***
 
-### PIS
-
-Se trata de una nueva forma de pago, directamente desde nuestra cuenta bancaria, sin necesidad de contar con un medio de pago adicional. Las características específicas con las que cuenta un Servicio de Iniciación de Pagos (PIS), es que:
-
-* Al tratarse de un proceso simplificado, la experiencia del usuario mejora porque no tiene que introducir los datos de una tarjeta.
-* Aumenta la seguridad para el comercio, se paga por transferencia, pero el iniciador asegura al comerciooo que el consumidor ha iniciado la transferencia y que recibirá el pago.
-* Se simplifican los trámites, al no ser necesarios contratos previos con el banco para llevar a cabo la transacción.
-
-### AIS
-
-Los agregadores de información sobre cuentas permiten al usuario ver todas sus cuentas pertenecientes a diferentes entidades financieras, conjuntamente. Pero no solo se trata de la aparición de nuevos actores, sino que las propias entidades financieras pueden ofrecer a su clientes servicios basados en esa información.
-
-¿Qué bases de datos pueden ser agregadas mediante AIS?
-
-Los datos que pueden utilizarse en los servicios agregación AIS son todos aquellos que deriven de cuentas bancarias o bancarizadas, tales como:
+Servicio de información sobre cuentas de los usuarios (PSU's). La información que se podrá consultar a partir de estos nuevos servicios, serán todos aquellos que se deriven de cuentas bancarias o bancarizadas, tales como:
 
 * Cuentas bancarias tanto corrientes como de ahorro
 * Depósitos bancarios
@@ -61,39 +45,45 @@ Los datos que pueden utilizarse en los servicios agregación AIS son todos aquel
 * Planes de pensiones y otros vehículos de ahorro
 * Cuentas hipotecarias
 
-### Confirmación de fondos
 
-Esta comprobación tiene sentido como paso previo a la ejecución de un pago con una tarjeta de crédito o de débito, y siempre que esta sea accesible de manera online. Al igual que en los dos servicios previos es necesario el consentimiento del cliente titular de la tarjeta.
+#### 3. PSP (Payment Service Provider)
 
-Los pasos que se llevan a cabo durante la confirmación de fondos, son:
+Pueden ser o no entidades bancarias, pero en general son intermediarios de servicios financieros. Los principales representantes son PayPal, Visa o Mastercard. 
+A diferencia de los ASPSP's, PSD2 no les impone ninguna obligación de servicio, aunque sí que cumplan el nuevo protocolo de envío de datos (3DS), y el resto de estándares técnicos del SCA [Strong Customer Autentication](https://www.eba.europa.eu/regulation-and-policy/payment-services-and-electronic-money/regulatory-technical-standards-on-strong-customer-authentication-and-secure-communication-under-psd2)
 
-* Antes de la primera solicitud, el usuario se compromete a dar consentimiento explícito a la entidad bancaria para que responda al PSP con la confirmación de fondos.
-* El PSP crea una solicitud de confirmación de fondos que envía a la entidad bancaria.
-* La entidad bancaria solicita al usuario el consentimiento para que pueda responder a la solicitud de confirmación de fondos.
-* Una vez aprobado, se crea un token que permite la confirmación de fondos de manera desasistida.
-* El banco contesta al PSP si el usuario tiene o no disponibilidad de fondos para poder llevar a cabo la operación.
+## Nuevos actores PSD2
 
-## Estándares de seguridad
+Surgen a partir de los nuevos servicios AIS y PIP  
 
-RTS Regulatory Technical Standards
+#### 1. (AISP) Account Information Service Provider 
 
-Están pensados para fortalecer la seguridad de los pagos que se realizan online, prestando especial atención a asegurar la correcta identificación del cliente.
+Sus servicios se basan en recopilar información relativa a las cuentas de sus usuarios, fundamentalmente saldos y movimientos.
 
-Los requisitos deben ser implementados tanto en el proceso de pago como en la prestación de servicios accesorios (PIS y AIS). Entra las medidas está la mencionada SCA (String Customer Authentication)
+Es decir, este nuevo proveedor permitirá al usuario tener una visión agregada de su liquidez y, por tanto, planificar sus operaciones de pago de una forma más eficiente y/o segura que en la actualidad.
 
-Pero no es la única medida, para los pagos online, el estándar establece que se proporcione una clave de un solo uso, de forma que dicha clave no se pueda volver a utilizar, para evitar un acceso no autorizado.
+Desde el punto de vista de la comunicación con la ASPSP, existen 4 intercambios esenciales, aunque no exclusivos:
 
-Estos estándares deben ser implementados tanto por las entidades bancarias como por otros proveedores de servicios de pago (PSP)
+* Obtención del listado de cuentas
+* Lectura del detalle de la cuenta (balance)
+* Obtención de transacciones de la cuenta
+* Obtención de los balances de pago
 
-## Webscrapping
+#### 2. (PISP) Payment Initiation Service Provider. 
 
-Screen scraping o webscrapping es una técnica por medio de la cual se extraen datos mostrados por un aplicación con objeto de volcarlos en otro para posteriormente trabajar con ellos. No es exclusiva del sector bancario, también es utilizada en otros sectores como el márquetin digital.
+Servicio destinado a la iniciación de pagos entre dos entidades, el prestador del servicio y la entidad de pago. A estos proveedores de servicios, adicionalmente les estará permitido almacenar información de los pagos gestionados para que el usuario pueda consultarlos.
 
-En el caso de la normativa PSD2, esta técnica solo puede realizarse con el consentimiento del cliente, y únicamente cuando las APIs no respondan.
+Permitirán que las compras se puedan pagar sin disponer de una tarjeta de crédito o débito, transfiriendo fondos desde una cuenta corriente del usuario ordenante a la del comercio, sin que ambas tengan que pertenecer al mismo banco necesariamente.
 
-A pesar de ser légitimo en este caso, las entidades financieras son reticentes a su uso, ya que supone que mediante el uso de credenciales de seguridad del usuario, los datos financieros quedan a disposición de terceros, sin que la entidad pueda conocer qué, quién o cuándo se extrae la información. 
+Al igual que en el caso anterior existe un conjunto de operaciones esenciales:
 
-## Fuentes
+* Inicio de pago
+* Obtención de información del estado de pago
+* Obtención de información del pago
+* Cancelar inicio de pago
+
+![PSD2 environment]({{site.baseurl}}/images/psd2-who.jpg)
+*PSD2 environment*
+## Fuentes consultadas
 
 * [Protagonistas y roles en el escenario general de la PSD2](https://www.bbvaapimarket.com/es/mundo-api/protagonistas-y-roles-en-el-escenario-general-de-la-psd2/)
 * [PSD2: qué es y en qué consiste la nueva normativa de pagos online](https://willistowerswatsonupdate.es/riesgos-corporativos-y-directivos/psd2-nueva-normativa-pagos-online/)
