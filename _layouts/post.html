@@ -29,10 +29,17 @@ layout: default
           {% endif %}
           <h1 class="post-title">{{ page.title | escape }}</h1>
           <div class="post__meta">
-            <div class="post__author">
-              <a href="{{site.baseurl}}/about/" class="post__author-image"
-                style="background-image: url({{site.baseurl}}{{site.author.avatar}})" aria-label="{{site.author.name}}'s Picture"></a> <a href="{{site.baseurl}}/about/" class="post__author-link">{{site.author.name}}</a>
-            </div>
+            {% if page.author.name %}
+              <div class="post__author">
+                <a href="{{site.baseurl}}/about/" class="post__author-image"
+                   style="background-image: url({{site.baseurl}}{{page.author.avatar}})" aria-label="{{site.author.name}}'s Picture"></a> <a href="{{page.author.url}}" class="post__author-link" target="_blank">{{ page.author.name }}</a>
+              </div>
+            {% else %}
+              <div class="post__author">
+                <a href="{{site.baseurl}}/about/" class="post__author-image"
+                   style="background-image: url({{site.baseurl}}{{site.author.avatar}})" aria-label="{{site.author.name}}'s Picture"></a> <a href="{{site.baseurl}}/about/" class="post__author-link">{{ site.author.name }}</a>
+              </div>
+            {% endif %}
             <span class="post__date">
               <time datetime="{{ page.date | date_to_xmlschema }}">{{page.date | date: '%b %d, %Y'}}</time>
             </span>

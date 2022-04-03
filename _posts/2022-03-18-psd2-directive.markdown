@@ -1,15 +1,19 @@
 ---
 layout: post
-title:  Psd2 - What
+title:  Psd2 - Qué
 date:   2022-03-18 18:05:55 +0300
 image:  '/images/20220318_psd2.jpg'
 tags:   open_banking security payment_methods fintech
+author:
+  name: David Pérez
+  avatar: '/images/avatarDavid.jpeg'
+  url: http://dabiz.me
 ---
 # Payment Service Directive 2
 
 Se trata de un marco regulatorio que pretende de dinamizar los cambios que se están produciendo en los servicios de pago. Aunque las iniciativas en este tipo de servicios son constantes, es el negocio de los pagos minoristas en el que más se nota esta corriente gracias a las FinTech.
 
-El acrónimo PSD2 corresponde a Payment Service Directive 2, directiva que define la normativa europea sobre pagos online. Aunque entró en vigor en 2018, y su aplicación estaba prevista para el 14 de septiembre de 2019, la ABE (Autoridad Bancaria Europea) aprobó una moratoria de 12 a 14 meses.
+El acrónimo ***PSD2 corresponde a Payment Service Directive 2***, directiva que define la normativa europea sobre pagos online. Aunque entró en vigor en 2018, y su aplicación estaba prevista para el 14 de septiembre de 2019, la ABE (Autoridad Bancaria Europea) aprobó una moratoria de 12 a 14 meses.
 
 Así pues la moratoria finalizó el 31 de diciembre de 2020 y el 1 de enero de 2021 se empezaron a aplicar los cambios legislativos derivados de ésta.
 
@@ -17,12 +21,12 @@ La nueva directiva presenta dos grandes áreas:
 
 * Seguridad. Mayor atención a los riesgos asociados a los procesos nacidos de la transformación digital
 * Regulación de Servicios Adicionales
-    * servicios de iniciación de pagos (Payment Initiation Service - PIS)
-    * Servicios de agregación (Account Information Service - AIS)
+    * Servicios de iniciación de pagos ***(Payment Initiation Service - PIS)***
+    * Servicios de agregación ***(Account Information Service - AIS)***
 
 En lo relativo a la seguridad se centra especialmente en las transacciones de carácter remoto, ya sea a través de internet o por medio de dispositivos móviles.
 
-Su objetivo es proteger a consumidores, comercios online y entidades financieras del fraude mediante la aplicación de "autenticación reforzada de cliente" o SCA (Strong Customer Authentication). Un mecanismo que trata de asegurar la identidad del usuario durante las transacciones online.
+Su objetivo es proteger a consumidores, comercios online y entidades financieras del fraude mediante la aplicación de ***"autenticación reforzada de cliente" o SCA (Strong Customer Authentication)***. Un mecanismo que trata de asegurar la identidad del usuario durante las transacciones online.
 
 ![PSD2 environment]({{site.baseurl}}/images/psd2-schema.png)
 
@@ -53,7 +57,7 @@ Los proveedores de servicios de pago (PSP), serán los responsables de garantiza
 
 ## Servicios adicionales
 
-PSD2 ha incluido la regulación de determinados servicios que habían quedado fuera en la anterior normativa. En concreto, los servicios prestados por entidades especializadas (Third Party Providers - TPP) sobre las cuentas de los clientes en otras entidades, iniciación de pagos en cuentas de otras entidades así como el ofrecimiento de información sobre saldos y operaciones de cuentas en otras entidades.
+PSD2 ha incluido la regulación de determinados servicios que habían quedado fuera en la anterior normativa. En concreto, los servicios prestados por entidades especializadas ***(Third Party Providers - TPP)*** sobre las cuentas de los clientes en otras entidades, iniciación de pagos en cuentas de otras entidades así como el ofrecimiento de información sobre saldos y operaciones de cuentas en otras entidades.
 
 La característica de este tipo de servicios es que la entidad prestadora no requiere administrar las cuentas accedidas, sino que es suficiente el consentimiento del cliente para operar u obtener información de ellas.
 
