@@ -17,9 +17,9 @@ author:
 #-------------------------------
 # Hero Settings
 hero:
-  title: DX
+  title: DX Area
   description: Moving Forward
-  image: '/images/skyline-5507490.jpg'
+  image: '/images/landing.webp'
 
 
 #-------------------------------
